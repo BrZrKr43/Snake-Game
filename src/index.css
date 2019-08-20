@@ -1,13 +1,35 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/* set the background image */
+body{
+  background-image: url(https://i.pinimg.com/originals/57/51/ff/5751ffa6c9042bdee838b2d3a2fa17d3.jpg);
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+/* creates the game area */
+.game-area{
+  background-color: rgb(243, 218, 186);
+  position: relative;
+  margin: 50px auto;
+  width: 600px;
+  height: 500px;
+  border: 2px solid #000;
+}
+
+/* what the snake appears as  */
+.snake-dot{
+  position: absolute;
+  width: 2%;
+  height: 2%;
+  background-color: rgb(5, 146, 104);
+  border: 1px solid rgb(20, 1, 1);
+  border-radius: 50px;
+  z-index: 2;
+}
+
+/* what the food looks like */
+.snake-food{
+  position: absolute;
+  width: 2%;
+  height: 2%;
+  background-color: red;
+  border: 1px solid #fff;
+  z-index: 1;
 }
